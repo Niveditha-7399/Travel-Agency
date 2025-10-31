@@ -88,8 +88,8 @@ def search():
     'unicode_escape')
     a=input("\nenter the pickup_date\n")
     for index, row in df.iterrows():
-    if a==row['pickup_date']:
-    print("\n",row)
+        if a==row['pickup_date']:
+            print("\n",row)
 
 
 while True:
@@ -108,4 +108,5 @@ while True:
     elif ch==3:
         modify()
     elif ch==4:
+
         search()
