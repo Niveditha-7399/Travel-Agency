@@ -82,8 +82,8 @@ def search():
     df=pd.read_csv(r'C:\Users\User\Desktop\airways.csv')
     a=input("\nenter the name: ")
     for index, row in df.iterrows():
-    if a==row['name']:
-    print("\n",row)
+        if a==row['name']:
+            print("\n",row)
 
 
 while True:
@@ -103,3 +103,4 @@ while True:
         modify()
     elif ch==4:
         search()
+
