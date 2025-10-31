@@ -59,7 +59,7 @@ def deletion():
 
 
 #defining a function that modifies info 
-#from the tp_details dataframe
+#from the transport dataframe
 def modify():
 
     #display the current dataframe/info in the csv
@@ -82,7 +82,7 @@ def modify():
 
 
 #this function helps in finding the row number for
-#an user input name of tp_details
+#an user input name of transport
 def search():
     df=pd.read_csv(r'C:\Users\User\Desktop\transport.csv')
     a=int(input("\nenter the customer id\n"))
@@ -108,4 +108,5 @@ while True:
     elif ch==3:
         modify()
     elif ch==4:
+
         search()
